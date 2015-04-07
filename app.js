@@ -33,5 +33,17 @@ myModule.controller('MainCtrl', function() {
       assignee: "Brian Ford"
     }
   ];
+
+  main.createStory = function() {
+    main.stories.push({
+      title: "New Story",
+      description: "Description pending.",
+      criteria: "Criteria pending.",
+      status: "Back Long",
+      type: "Feature",
+      reporter: "Pending",
+      assignee: "Pending"
+    });
+  };
 });
 myModule.directive('story', function() { });
